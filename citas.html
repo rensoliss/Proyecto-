@@ -31,51 +31,57 @@
 </header>
 
 <!-- MAIN -->
-<main class="flex-1 flex items-center justify-center pt-24">
+<main class="flex-1 pt-24 flex flex-col">
 
-<section id="citas" class="w-full text-center">
+<section class="flex-1 w-full flex flex-col items-center px-4 py-10">
 
-  <h2 class="text-3xl font-bold text-[#4A7FD1] mb-6">
-    Agendar Cita
-  </h2>
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="w-full max-w-5xl bg-white rounded-xl shadow-lg p-8">
 
-  <form id="formCitas"
-    class="max-w-md mx-auto bg-white p-6 rounded-xl space-y-4 shadow-md">
+    <h2 class="text-3xl font-bold text-[#4A7FD1] mb-8 text-center">
+      Agendar Cita
+    </h2>
 
-    <input type="text" name="nombre" placeholder="Nombre completo" required
-      class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+    <form id="formCitas" class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-    <input type="email" name="correo" placeholder="Correo electrónico" required
-      class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+      <input type="text" name="nombre" placeholder="Nombre completo" required
+        class="border p-3 rounded w-full">
 
-    <input type="tel" name="telefono" placeholder="Teléfono"
-      class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+      <input type="email" name="correo" placeholder="Correo electrónico" required
+        class="border p-3 rounded w-full">
 
-    <input type="date" name="fecha" required
-      class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+      <input type="tel" name="telefono" placeholder="Teléfono"
+        class="border p-3 rounded w-full">
 
-    <select name="especialidad"
-      class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
-      <option>Selecciona especialidad</option>
-      <option>Cardiología</option>
-      <option>Pediatría</option>
-      <option>Dermatología</option>
-      <option>Ginecología</option>
-      <option>Traumatología</option>
-      <option>Nutrición</option>
-      <option>Neurología</option>
-      <option>Psicología</option>
-      <option>Endocrinología</option>
-    </select>
+      <input type="date" name="fecha" required
+        class="border p-3 rounded w-full">
 
-    <textarea name="motivo" placeholder="Motivo de la consulta"
-      class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400"></textarea>
+      <select name="especialidad"
+        class="border p-3 rounded w-full md:col-span-2">
 
-    <button class="bg-[#4A7FD1] text-white py-3 rounded hover:bg-[#3F73C4] transition w-full">
-      Agendar
-    </button>
+        <option>Selecciona especialidad</option>
+        <option>Cardiología</option>
+        <option>Pediatría</option>
+        <option>Dermatología</option>
+        <option>Ginecología</option>
+        <option>Traumatología</option>
+        <option>Nutrición</option>
+        <option>Neurología</option>
+        <option>Psicología</option>
+        <option>Endocrinología</option>
 
-  </form>
+      </select>
+
+      <textarea name="motivo" placeholder="Motivo de la consulta"
+        class="border p-3 rounded w-full md:col-span-2"></textarea>
+
+      <button class="bg-[#4A7FD1] text-white py-3 rounded hover:bg-[#3F73C4] transition w-full md:col-span-2">
+        Agendar Cita
+      </button>
+
+    </form>
+
+  </div>
 
 </section>
 
