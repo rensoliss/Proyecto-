@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doctores - Clínica Integral</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body class="bg-gray-100 scroll-smooth">
+
+<!-- NAVBAR -->
+<header class="bg-[#4A7FD1] text-white fixed w-full top-0 z-50 shadow-md">
+<div class="container mx-auto flex justify-between items-center p-4">
+<h1 class="font-bold text-xl"><i class="fas fa-heartbeat"></i> Clínica Integral</h1>
+
+<nav class="space-x-6 hidden md:block">
+<a href="index.html" class="hover:text-blue-200 transition">Inicio</a>
+<a href="servicios.html" class="hover:text-blue-200 transition">Servicios</a>
+<a href="nosotros.html" class="hover:text-blue-200 transition">Nosotros</a>
+<a href="doctores.html" class="hover:text-blue-200 transition font-bold underline">Doctores</a>
+<a href="expedientes.html" class="hover:text-blue-200 transition">Expediente</a>
+<a href="resenas.html" class="hover:text-blue-200 transition">Reseñas</a>
+<a href="citas.html" class="hover:text-blue-200 transition">Citas</a>
+</nav>
+</div>
+</header>
+
+
+<div class="h-24"></div>
+
+<!-- DOCTORES -->
+<section id="doctores" class="py-12 text-center bg-gray-50">
+
+<h2 class="text-3xl font-bold text-[#4A7FD1] mb-10 hover:text-[#3F73C4] transition">
+Nuestro Equipo Médico
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
+
+<!-- DOCTOR 1 -->
+<div class="bg-white p-6 rounded-xl flex flex-col items-center hover:scale-105 hover:shadow-2xl transition cursor-pointer"
+onclick="openModal(1)">
+<img src="https://tse4.mm.bing.net/th/id/OIP.fDqkNWKhUFFWu_a5n0gStQAAAA?w=400&h=470&rs=1&pid=ImgDetMain&o=7&rm=3"
+class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-[#4A7FD1]">
+
+<h3 class="font-bold text-lg">Dra. María López</h3>
+<div class="w-10 h-[3px] bg-[#4A7FD1] my-2 rounded"></div>
+<p class="text-[#4A7FD1] font-semibold">Cardióloga</p>
+
+<p class="text-sm text-gray-600 mt-2 text-center italic">
+"La prevención es la clave de la salud."
+</p>
+
+<p class="text-xs text-gray-500 mt-2">
+Especialista en enfermedades cardiovasculares y control de hipertensión.
+Atención en consulta privada y hospitalaria con enfoque preventivo.
+</p>
+</div>
+
+<!-- DOCTOR 2 -->
+<div class="bg-white p-6 rounded-xl flex flex-col items-center hover:scale-105 hover:shadow-2xl transition cursor-pointer"
+onclick="openModal(2)">
+<img src="https://d3wnzga3fpd9a.cloudfront.net/photos/Dr-Juan-Carlos-Perez-Espinosa-DO-125533-circle_large.png"
+class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-[#4A7FD1]">
+
+<h3 class="font-bold text-lg">Dr. Juan Pérez</h3>
+<div class="w-10 h-[3px] bg-[#4A7FD1] my-2 rounded"></div>
+<p class="text-[#4A7FD1] font-semibold">Pediatra</p>
+
+<p class="text-sm text-gray-600 mt-2 text-center italic">
+"Cada niño merece atención con amor."
+</p>
+
+<p class="text-xs text-gray-500 mt-2">
+Especialista en crecimiento infantil, vacunación y control del desarrollo.
+Experiencia en atención neonatal y pediatría preventiva.
+</p>
+</div>
+
+<!-- DOCTOR 3 -->
+<div class="bg-white p-6 rounded-xl flex flex-col items-center hover:scale-105 hover:shadow-2xl transition cursor-pointer"
+onclick="openModal(3)">
+<img src="https://static.healthencyclo.com/author/carlos-ruiz-md.webp"
+class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-[#4A7FD1]">
+
+<h3 class="font-bold text-lg">Dr. Carlos Ruiz</h3>
+<div class="w-10 h-[3px] bg-[#4A7FD1] my-2 rounded"></div>
+<p class="text-[#4A7FD1] font-semibold">Dermatólogo</p>
+
+<p class="text-sm text-gray-600 mt-2 text-center italic">
+"La piel refleja tu bienestar interno."
+</p>
+
+<p class="text-xs text-gray-500 mt-2">
+Tratamientos dermatológicos avanzados en piel, acné y enfermedades crónicas.
+Especialista en estética dermatológica y prevención del envejecimiento.
+</p>
+</div>
+
+<!-- DOCTORES 4 - 9  -->
+
+<div class="bg-white p-6 rounded-xl flex flex-col items-center hover:scale-105 hover:shadow-2xl transition cursor-pointer"
+onclick="openModal(4)">
+<img src="https://asprofa.es/wp-content/uploads/listing-uploads/gallery/2023/05/f0978feccb4bded12661cc52de3b38f3.jpeg"
+class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-[#4A7FD1]">
+
+<h3 class="font-bold text-lg">Dra. Ana Martínez</h3>
+<div class="w-10 h-[3px] bg-[#4A7FD1] my-2 rounded"></div>
+<p class="text-[#4A7FD1] font-semibold">Ginecóloga</p>
+
+<p class="text-sm text-gray-600 mt-2 text-center italic">
+"La salud femenina es prioridad."
+</p>
+
+<p class="text-xs text-gray-500 mt-2">
+Especialista en salud reproductiva, embarazo y control hormonal.
+Atención integral en cada etapa de la mujer.
+</p>
+</div>
+
+<div class="bg-white p-6 rounded-xl flex flex-col items-center hover:scale-105 hover:shadow-2xl transition cursor-pointer"
+onclick="openModal(5)">
+<img src="https://s3.us-east-1.amazonaws.com/doctoralia.com.mx/doctor/0861da/0861da01224a31b07974adfa9d92dcf7_large.jpg"
+class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-[#4A7FD1]">
+
+<h3 class="font-bold text-lg">Dr. Luis Hernández</h3>
+<div class="w-10 h-[3px] bg-[#4A7FD1] my-2 rounded"></div>
+<p class="text-[#4A7FD1] font-semibold">Traumatólogo</p>
+
+<p class="text-sm text-gray-600 mt-2 text-center italic">
+"El movimiento es recuperación."
+</p>
+
+<p class="text-xs text-gray-500 mt-2">
+Especialista en fracturas, lesiones deportivas y rehabilitación física.
+Experiencia en cirugía ortopédica avanzada.
+</p>
+</div>
+
+<div class="bg-white p-6 rounded-xl flex flex-col items-center hover:scale-105 hover:shadow-2xl transition cursor-pointer"
+onclick="openModal(6)">
+<img src="https://www.incmnsz.mx/fotosINCMNSZ/Gastroenterologia/Sophia-Martinez-Vazquez.jpg"
+class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-[#4A7FD1]">
+
+<h3 class="font-bold text-lg">Dra. Sofía Ramírez</h3>
+<div class="w-10 h-[3px] bg-[#4A7FD1] my-2 rounded"></div>
+<p class="text-[#4A7FD1] font-semibold">Nutrióloga</p>
+
+<p class="text-sm text-gray-600 mt-2 text-center italic">
+"La alimentación es medicina preventiva."
+</p>
+
+<p class="text-xs text-gray-500 mt-2">
+Diseño de planes alimenticios personalizados y control metabólico.
+Especialista en nutrición clínica y deportiva.
+</p>
+</div>
+
+<div class="bg-white p-6 rounded-xl flex flex-col items-center hover:scale-105 hover:shadow-2xl transition cursor-pointer"
+onclick="openModal(7)">
+<img src="https://static.wixstatic.com/media/7b51d3_6015aa9055f546a1b691e36f9456615a~mv2.png"
+class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-[#4A7FD1]">
+
+<h3 class="font-bold text-lg">Dr. Miguel Torres</h3>
+<div class="w-10 h-[3px] bg-[#4A7FD1] my-2 rounded"></div>
+<p class="text-[#4A7FD1] font-semibold">Neurólogo</p>
+
+<p class="text-sm text-gray-600 mt-2 text-center italic">
+"El cerebro es el centro del bienestar."
+</p>
+
+<p class="text-xs text-gray-500 mt-2">
+Tratamiento de migrañas, epilepsia y enfermedades neurológicas complejas.
+Diagnóstico con tecnología avanzada.
+</p>
+</div>
+
+<div class="bg-white p-6 rounded-xl flex flex-col items-center hover:scale-105 hover:shadow-2xl transition cursor-pointer"
+onclick="openModal(8)">
+<img src="https://idahc.com/wp-content/uploads/2023/09/Laura-Gomez.jpg"
+class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-[#4A7FD1]">
+
+<h3 class="font-bold text-lg">Dra. Laura Gómez</h3>
+<div class="w-10 h-[3px] bg-[#4A7FD1] my-2 rounded"></div>
+<p class="text-[#4A7FD1] font-semibold">Psicóloga</p>
+
+<p class="text-sm text-gray-600 mt-2 text-center italic">
+"La mente sana crea vidas sanas."
+</p>
+
+<p class="text-xs text-gray-500 mt-2">
+Terapia psicológica para ansiedad, depresión y estrés.
+Enfoque en salud emocional y bienestar integral.
+</p>
+</div>
+
+<div class="bg-white p-6 rounded-xl flex flex-col items-center hover:scale-105 hover:shadow-2xl transition cursor-pointer"
+onclick="openModal(9)">
+<img src="https://img.lb.wbmdstatic.com/lhd/provider/1022857_48c2acf1-3152-4859-9ae4-83b4093fc6a4.jpg"
+class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-[#4A7FD1]">
+
+<h3 class="font-bold text-lg">Dr. Ricardo Castillo</h3>
+<div class="w-10 h-[3px] bg-[#4A7FD1] my-2 rounded"></div>
+<p class="text-[#4A7FD1] font-semibold">Endocrinólogo</p>
+
+<p class="text-sm text-gray-600 mt-2 text-center italic">
+"El equilibrio hormonal es vital para la salud."
+</p>
+
+<p class="text-xs text-gray-500 mt-2">
+Especialista en diabetes, tiroides y trastornos hormonales.
+Atención integral en enfermedades metabólicas.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- MODAL -->
+<div id="doctorModal" class="hidden fixed inset-0 bg-black/60 items-center justify-center z-50">
+
+  <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6 text-center relative">
+
+    <button onclick="closeModal()" class="absolute top-3 right-4 text-gray-500 text-xl">✖</button>
+
+    <h3 id="modalName" class="text-xl font-bold text-[#4A7FD1] mb-2"></h3>
+
+    <p id="modalSpecialty" class="text-sm text-gray-500 mb-4"></p>
+
+    <div class="w-12 h-1 bg-[#4A7FD1] mx-auto mb-4 rounded"></div>
+
+    <p id="modalQuote" class="text-gray-700 text-sm leading-relaxed text-center"></p>
+
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-[#4A7FD1] text-white text-center p-4 mt-10">
+<p>© 2026 Clínica Integral</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+const modal = document.getElementById("doctorModal");
+const nameEl = document.getElementById("modalName");
+const specEl = document.getElementById("modalSpecialty");
+const quoteEl = document.getElementById("modalQuote");
+
+const doctors = {
+  1: {
+    name:"Dra. María López",
+    spec:"Cardióloga",
+    quote:"UNAM – Medicina General\nEspecialidad en Cardiología\nHospital General de México\nCertificación en Ecocardiografía"
+  },
+  2: {
+    name:"Dr. Juan Pérez",
+    spec:"Pediatra",
+    quote:"IPN – Medicina General\nEspecialidad en Pediatría\nHospital Infantil de México\nDiplomado en Neonatología"
+  },
+  3: {
+    name:"Dr. Carlos Ruiz",
+    spec:"Dermatólogo",
+    quote:"UNAM – Medicina General\nEspecialidad en Dermatología\nInstituto de Dermatología Avanzada\nCertificación en Dermatoscopia"
+  },
+  4: {
+    name:"Dra. Ana Martínez",
+    spec:"Ginecóloga",
+    quote:"UNAM – Medicina General\nEspecialidad en Ginecología y Obstetricia\nHospital de la Mujer\nDiplomado en Ultrasonido Obstétrico"
+  },
+  5: {
+    name:"Dr. Luis Hernández",
+    spec:"Traumatólogo",
+    quote:"IPN – Medicina General\nEspecialidad en Ortopedia\nHospital de Traumatología\nCertificación en Cirugía Articular"
+  },
+  6: {
+    name:"Dra. Sofía Ramírez",
+    spec:"Nutrióloga",
+    quote:"UAM – Nutrición Humana\nMaestría en Nutrición Clínica\nDiplomado en Nutrición Deportiva\nCertificación en Dietoterapia"
+  },
+  7: {
+    name:"Dr. Miguel Torres",
+    spec:"Neurólogo",
+    quote:"UNAM – Medicina General\nEspecialidad en Neurología\nInstituto Nacional de Neurología\nDiplomado en Neurofisiología"
+  },
+  8: {
+    name:"Dra. Laura Gómez",
+    spec:"Psicóloga",
+    quote:"UNAM – Psicología Clínica\nMaestría en Terapia Cognitivo-Conductual\nCertificación en Salud Mental\nDiplomado en Terapia Familiar"
+  },
+  9: {
+    name:"Dr. Ricardo Castillo",
+    spec:"Endocrinólogo",
+    quote:"IPN – Medicina General\nEspecialidad en Endocrinología\nHospital de Alta Especialidad\nDiplomado en Diabetes y Metabolismo"
+  }
+};
+
+window.openModal = function(id){
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+
+  nameEl.textContent = doctors[id].name;
+  specEl.textContent = doctors[id].spec;
+
+  quoteEl.innerHTML = `
+    <div class="text-center">
+      <p class="font-bold text-[#4A7FD1] mb-2">Formación académica</p>
+      <p class="whitespace-pre-line text-gray-700 leading-relaxed">
+        ${doctors[id].quote}
+      </p>
+    </div>
+  `;
+}
+
+window.closeModal = function(){
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
+}
+
+// cerrar al hacer click fuera del contenido
+modal.addEventListener("click", (e)=>{
+  if(e.target === modal) closeModal();
+});
+
+});
+</script>
+  
+</body>
+</html>

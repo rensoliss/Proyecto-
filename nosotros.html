@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosotros - Clínica Integral</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body class="bg-gray-100 scroll-smooth">
+
+<!-- NAVBAR -->
+<header class="bg-[#4A7FD1] text-white fixed w-full top-0 z-50 shadow-md">
+<div class="container mx-auto flex justify-between items-center p-4">
+<h1 class="font-bold text-xl"><i class="fas fa-heartbeat"></i> Clínica Integral</h1>
+
+<nav class="space-x-6 hidden md:block">
+<a href="index.html" class="hover:text-blue-200 transition">Inicio</a>
+<a href="servicios.html" class="hover:text-blue-200 transition">Servicios</a>
+<a href="nosotros.html" class="hover:text-blue-200 transition font-bold underline">Nosotros</a>
+<a href="doctores.html" class="hover:text-blue-200 transition">Doctores</a>
+<a href="expedientes.html" class="hover:text-blue-200 transition">Expediente</a>
+<a href="resenas.html" class="hover:text-blue-200 transition">Reseñas</a>
+<a href="citas.html" class="hover:text-blue-200 transition">Citas</a>
+</nav>
+</div>
+</header>
+
+
+<div class="h-24"></div>
+
+<!-- NOSOTROS -->
+<section id="nosotros" class="py-12 bg-white px-6">
+<div class="max-w-6xl mx-auto text-center">
+
+<h2 class="text-4xl font-bold text-[#4A7FD1] mb-10 hover:text-[#3F73C4] transition">Sobre Nosotros</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<!-- HISTORIA -->
+<div class="p-6 bg-gray-50 rounded-xl hover:scale-105 hover:shadow-lg transition flex flex-col h-full">
+
+  <i class="fas fa-hospital text-3xl text-[#4A7FD1] mb-4"></i>
+
+  <h3 class="text-xl font-bold mb-2">Nuestra Historia</h3>
+
+  <p class="text-gray-600">
+    Clínica Integral nace con el compromiso de brindar atención médica de calidad,
+    integrando tecnología moderna y personal altamente capacitado para mejorar la salud de nuestros pacientes,
+    ofreciendo confianza, seguridad y atención humana en cada servicio que realizamos día con día.
+  </p>
+
+  <div class="mt-4 text-sm text-[#4A7FD1] font-semibold space-y-1">
+    ✔ Más de una década de experiencia<br>
+    ✔ Tecnología médica moderna<br>
+    ✔ Atención centrada en el paciente
+  </div>
+
+</div>
+
+<!-- MISIÓN -->
+<div class="p-6 bg-gray-50 rounded-xl hover:scale-105 hover:shadow-lg transition flex flex-col h-full">
+
+  <i class="fas fa-bullseye text-3xl text-[#4A7FD1] mb-4"></i>
+
+  <h3 class="text-xl font-bold mb-2">Misión</h3>
+
+  <p class="text-gray-600">
+    Brindar servicios de salud integrales, accesibles y humanizados,
+    priorizando la seguridad, bienestar y confianza del paciente en cada atención,
+    asegurando un trato profesional, ético y de calidad en todos nuestros servicios médicos.
+  </p>
+
+  <div class="mt-4 text-sm text-[#4A7FD1] font-semibold space-y-1">
+    ✔ Atención médica integral<br>
+    ✔ Trato humano y profesional<br>
+    ✔ Diagnóstico oportuno y seguro
+  </div>
+
+</div>
+
+<!-- VISIÓN -->
+<div class="p-6 bg-gray-50 rounded-xl hover:scale-105 hover:shadow-lg transition flex flex-col h-full">
+
+  <i class="fas fa-eye text-3xl text-[#4A7FD1] mb-4"></i>
+
+  <h3 class="text-xl font-bold mb-2">Visión</h3>
+
+  <p class="text-gray-600">
+    Ser una institución líder en atención médica,
+    reconocida por su innovación, calidad humana y compromiso con la sociedad,
+    expandiendo nuestros servicios para ofrecer soluciones médicas modernas y accesibles para todos.
+  </p>
+
+  <div class="mt-4 text-sm text-[#4A7FD1] font-semibold space-y-1">
+    ✔ Liderazgo en salud<br>
+    ✔ Innovación constante<br>
+    ✔ Excelencia médica
+  </div>
+
+</div>
+
+</div>
+<!-- ENCUÉNTRANOS -->
+<div class="mt-12">
+<h3 class="text-4xl font-bold text-[#4A7FD1] mb-4">Encuéntranos</h3>
+
+<iframe 
+    width="100%" 
+    height="400" 
+    style="border:0;"
+    loading="lazy"
+    allowfullscreen
+    src="https://www.google.com/maps?q=Ecatepec&output=embed">
+</iframe>
+
+<!-- REDES SOCIALES -->
+<div class="flex justify-center space-x-6 mt-6 text-[#4A7FD1] text-2xl">
+
+<a href="#" onclick="mostrarRed('Facebook')" class="hover:text-[#3F73C4] transition">
+<i class="fab fa-facebook"></i>
+</a>
+
+<a href="#" onclick="mostrarRed('Instagram')" class="hover:text-[#3F73C4] transition">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="#" onclick="mostrarRed('Twitter')" class="hover:text-[#3F73C4] transition">
+<i class="fab fa-twitter"></i>
+</a>
+
+<a href="#" onclick="mostrarRed('WhatsApp')" class="hover:text-[#3F73C4] transition">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</div>
+
+<!-- MODAL -->
+<div id="modalRed" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+
+  <div class="bg-white rounded-xl p-6 w-80 text-center shadow-2xl transform transition-all duration-300 scale-95 opacity-0" id="modalContenido">
+    
+    <h3 id="tituloRed" class="text-xl font-bold text-[#4A7FD1] mb-3"></h3>
+    
+    <p id="contenidoRed" class="text-gray-700 mb-4 whitespace-pre-line"></p>
+    
+    <button onclick="cerrarModal()" class="bg-[#4A7FD1] text-white px-4 py-2 rounded hover:bg-[#3F73C4] transition">
+      Cerrar
+    </button>
+  
+  </div>
+
+</div>
+
+<script>
+function mostrarRed(red) {
+    let titulo = "";
+    let contenido = "";
+
+    if (red === "Facebook") {
+        titulo = "Facebook";
+        contenido = "Clínica Integral\nfacebook.com/clinica.integral";
+    } else if (red === "Instagram") {
+        titulo = "Instagram";
+        contenido = "@clinica.integral";
+    } else if (red === "Twitter") {
+        titulo = "Twitter";
+        contenido = "@clinica_integral";
+    } else if (red === "WhatsApp") {
+        titulo = "WhatsApp";
+        contenido = "+52 55 1234 5678";
+    }
+
+    document.getElementById("tituloRed").innerText = titulo;
+    document.getElementById("contenidoRed").innerText = contenido;
+
+    const modal = document.getElementById("modalRed");
+    const contenidoBox = document.getElementById("modalContenido");
+
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+
+    setTimeout(() => {
+        contenidoBox.classList.remove("scale-95", "opacity-0");
+        contenidoBox.classList.add("scale-100", "opacity-100");
+    }, 10);
+}
+
+function cerrarModal() {
+    const modal = document.getElementById("modalRed");
+    const contenidoBox = document.getElementById("modalContenido");
+
+    contenidoBox.classList.remove("scale-100", "opacity-100");
+    contenidoBox.classList.add("scale-95", "opacity-0");
+
+    setTimeout(() => {
+        modal.classList.add("hidden");
+    }, 200);
+}
+</script>
+
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#4A7FD1] text-white text-center p-4 mt-10">
+<p>© 2026 Clínica Integral</p>
+</footer>
+  
+</body>
+</html>

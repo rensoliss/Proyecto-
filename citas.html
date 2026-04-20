@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Citas - Clínica Integral</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="bg-gray-100 scroll-smooth">
+
+<!-- NAVBAR -->
+<header class="bg-[#4A7FD1] text-white fixed w-full top-0 z-50 shadow-md">
+<div class="container mx-auto flex justify-between items-center p-4">
+<h1 class="font-bold text-xl"><i class="fas fa-heartbeat"></i> Clínica Integral</h1>
+
+<nav class="space-x-6 hidden md:block">
+<a href="index.html" class="hover:text-blue-200 transition">Inicio</a>
+<a href="servicios.html" class="hover:text-blue-200 transition">Servicios</a>
+<a href="nosotros.html" class="hover:text-blue-200 transition">Nosotros</a>
+<a href="doctores.html" class="hover:text-blue-200 transition">Doctores</a>
+<a href="expedientes.html" class="hover:text-blue-200 transition">Expediente</a>
+<a href="resenas.html" class="hover:text-blue-200 transition">Reseñas</a>
+<a href="citas.html" class="hover:text-blue-200 transition font-bold underline">Citas</a>
+</nav>
+</div>
+</header>
+
+<div class="h-24"></div>
+
+<!-- CITAS -->
+<section id="citas" class="py-12 text-center">
+<h2 class="text-3xl font-bold text-[#4A7FD1] mb-6 hover:text-[#3F73C4] transition">Agendar Cita</h2>
+
+<form id="formCitas" class="max-w-md mx-auto bg-white p-6 rounded-xl space-y-4 shadow-md">
+<input type="text" name="nombre" placeholder="Nombre completo" required class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+<input type="email" name="correo" placeholder="Correo electrónico" required class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+
+<input type="tel" name="telefono" placeholder="Teléfono" class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+
+<input type="date" name="fecha" required class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+
+<select name="especialidad" class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+<option>Selecciona especialidad</option>
+<option>Cardiología</option>
+<option>Pediatría</option>
+<option>Dermatología</option>
+<option>Ginecología</option>
+<option>Traumatología</option>
+<option>Nutrición</option>
+<option>Neurología</option>
+<option>Psicología</option>
+<option>Endocrinología</option>
+</select>
+
+<textarea name="motivo" placeholder="Motivo de la consulta" class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400"></textarea>
+
+<button class="bg-[#4A7FD1] text-white py-3 rounded hover:bg-[#3F73C4] transition w-full">
+Agendar
+</button>
+
+</form>
+<script>
+document.getElementById("formCitas").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const formData = new FormData(this);
+
+    fetch("https://script.google.com/macros/s/AKfycbylYOsYDSZCCqpxtmcUt4VV2ASV_syp2yZ8yJ8_HsOZHipIh4LelH8kUxC1B1EqmI1j-w/exec", {
+        method: "POST",
+        mode: "no-cors",
+        body: formData
+    })
+    .then(() => {
+        alert("Cita guardada correctamente ✅");
+        this.reset();
+    })
+    .catch(() => {
+        alert("Error al guardar ❌");
+    });
+});
+</script>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#4A7FD1] text-white text-center p-4 mt-10">
+<p>© 2026 Clínica Integral</p>
+</footer>
+
+</body>
+</html>

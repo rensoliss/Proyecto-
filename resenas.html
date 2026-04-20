@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reseñas - Clínica Integral</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="bg-gray-100 scroll-smooth">
+
+<!-- NAVBAR -->
+<header class="bg-[#4A7FD1] text-white fixed w-full top-0 z-50 shadow-md">
+<div class="container mx-auto flex justify-between items-center p-4">
+<h1 class="font-bold text-xl"><i class="fas fa-heartbeat"></i> Clínica Integral</h1>
+
+<nav class="space-x-6 hidden md:block">
+<a href="index.html" class="hover:text-blue-200 transition">Inicio</a>
+<a href="servicios.html" class="hover:text-blue-200 transition">Servicios</a>
+<a href="nosotros.html" class="hover:text-blue-200 transition">Nosotros</a>
+<a href="doctores.html" class="hover:text-blue-200 transition">Doctores</a>
+<a href="expedientes.html" class="hover:text-blue-200 transition">Expediente</a>
+<a href="resenas.html" class="hover:text-blue-200 transition font-bold underline">Reseñas</a>
+<a href="citas.html" class="hover:text-blue-200 transition">Citas</a>
+</nav>
+</div>
+</header>
+
+<div class="h-24"></div>
+
+<!-- RESEÑAS -->
+<section id="blog" class="py-16 relative overflow-hidden text-center">
+
+<!-- FONDO ANIMADO -->
+<div class="absolute inset-0 bg-gradient-to-br from-blue-100 via-white to-blue-200 opacity-70"></div>
+
+<div class="absolute inset-0">
+  <div class="absolute w-72 h-72 bg-[#4A7FD1] opacity-20 rounded-full blur-3xl animate-pulse top-10 left-10"></div>
+  <div class="absolute w-72 h-72 bg-blue-300 opacity-20 rounded-full blur-3xl animate-pulse bottom-10 right-10"></div>
+</div>
+
+<h2 class="text-3xl font-bold text-[#4A7FD1] mb-12 relative z-10">
+  Reseñas de los Pacientes 
+</h2>
+
+<div class="relative max-w-4xl mx-auto overflow-hidden z-10">
+
+<div id="carousel" class="flex w-full transition-transform duration-700 ease-in-out">
+
+    <!-- PERSONA 1 -->
+    <div class="min-w-full flex justify-center items-center">
+      <div class="card w-64 h-[420px] rounded-3xl shadow-2xl overflow-hidden relative flex flex-col justify-end p-5 text-left">
+        
+        <img src="https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
+             class="absolute inset-0 w-full h-full object-cover">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+
+        <div class="relative text-white">
+          <h3 class="font-bold text-lg">María González</h3>
+          <p class="text-yellow-400 text-base mb-1">★★★★★</p>
+          <p class="text-xs">
+            "Recibí una atención excelente desde que llegué. Los doctores fueron muy amables y profesionales."
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PERSONA 2 -->
+    <div class="min-w-full flex justify-center items-center">
+      <div class="card w-64 h-[420px] rounded-3xl shadow-2xl overflow-hidden relative flex flex-col justify-end p-5 text-left">
+
+        <img src="https://www.divulga.com.mx/wp-content/uploads/2022/01/Carlos-Ramirez-Fuentes.jpg"
+             class="absolute inset-0 w-full h-full object-cover">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+
+        <div class="relative text-white">
+          <h3 class="font-bold text-lg">Carlos Ramírez</h3>
+          <p class="text-yellow-400 text-base mb-1">★★★★★</p>
+          <p class="text-xs">
+            "La clínica es muy moderna y limpia. Me atendieron rápido en urgencias."
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PERSONA 3 -->
+    <div class="min-w-full flex justify-center items-center">
+      <div class="card w-64 h-[420px] rounded-3xl shadow-2xl overflow-hidden relative flex flex-col justify-end p-5 text-left">
+
+        <img src="https://pbs.twimg.com/profile_images/1407158418826174466/u2N-AuyM_400x400.jpg"
+             class="absolute inset-0 w-full h-full object-cover">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+
+        <div class="relative text-white">
+          <h3 class="font-bold text-lg">Ana López</h3>
+          <p class="text-yellow-400 text-base mb-1">★★★★☆</p>
+          <p class="text-xs">
+            "La cita fue puntual y el doctor explicó todo muy bien."
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PERSONA 4 -->
+    <div class="min-w-full flex justify-center items-center">
+      <div class="card w-64 h-[420px] rounded-3xl shadow-2xl overflow-hidden relative flex flex-col justify-end p-5 text-left">
+
+        <img src="https://www.nl.gob.mx/sites/default/files/repositorio/Fotograf%C3%ADas%20de%20funcionarios/Organismos%20descentralizados/Luis_Andres_Herrera_Sosa.jpg"
+             class="absolute inset-0 w-full h-full object-cover">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+
+        <div class="relative text-white">
+          <h3 class="font-bold text-lg">Luis Herrera</h3>
+          <p class="text-yellow-400 text-base mb-1">★★★★★</p>
+          <p class="text-xs">
+            "Todo el personal fue muy profesional."
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PERSONA 5 -->
+    <div class="min-w-full flex justify-center items-center">
+      <div class="card w-64 h-[420px] rounded-3xl shadow-2xl overflow-hidden relative flex flex-col justify-end p-5 text-left">
+
+        <img src="https://everybodydance.org/wp-content/uploads/2024/12/Sofia-Martinez.jpg"
+             class="absolute inset-0 w-full h-full object-cover">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+
+        <div class="relative text-white">
+          <h3 class="font-bold text-lg">Sofía Martínez</h3>
+          <p class="text-yellow-400 text-base mb-1">★★★★★</p>
+          <p class="text-xs">
+            "Me sentí muy cómoda durante mi consulta."
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PERSONA 6 -->
+    <div class="min-w-full flex justify-center items-center">
+      <div class="card w-64 h-[420px] rounded-3xl shadow-2xl overflow-hidden relative flex flex-col justify-end p-5 text-left">
+
+        <img src="https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
+             class="absolute inset-0 w-full h-full object-cover">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+
+        <div class="relative text-white">
+          <h3 class="font-bold text-lg">Ricardo Torres</h3>
+          <p class="text-yellow-400 text-base mb-1">★★★★☆</p>
+          <p class="text-xs">
+            "Buen servicio en general, muy recomendable."
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- INDICADORES -->
+  <div id="dots" class="flex justify-center mt-6 space-x-2"></div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#4A7FD1] text-white text-center p-4 mt-10">
+<p>© 2026 Clínica Integral</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+const carousel = document.getElementById("carousel");
+const slides = document.querySelectorAll("#carousel > div");
+const dotsContainer = document.getElementById("dots");
+
+if (!carousel || slides.length === 0) return;
+
+let index = 0;
+
+// dots
+dotsContainer.innerHTML = "";
+
+slides.forEach((_, i) => {
+    const dot = document.createElement("div");
+    dot.className = "w-2.5 h-2.5 rounded-full bg-gray-300 cursor-pointer transition";
+    dot.onclick = () => {
+        index = i;
+        update();
+    };
+    dotsContainer.appendChild(dot);
+});
+
+const dots = dotsContainer.children;
+
+function update() {
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("bg-[#4A7FD1]");
+    }
+
+    dots[index].classList.add("bg-[#4A7FD1]");
+}
+
+function autoPlay() {
+    index = (index + 1) % slides.length;
+    update();
+}
+
+update();
+setInterval(autoPlay, 4000);
+
+});
+</script>
+  
+</body>
+</html>
