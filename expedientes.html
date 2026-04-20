@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
-<body class="bg-gray-100 scroll-smooth min-h-screen flex flex-col pt-16">
+<body class="bg-gray-100 min-h-screen flex flex-col pt-16">
 
 <!-- NAVBAR -->
 <header class="bg-[#4A7FD1] text-white fixed w-full top-0 z-50 shadow-md">
@@ -31,55 +31,53 @@
 </header>
 
 <!-- MAIN -->
-<main class="flex-1 flex items-center justify-center">
-<!-- NAVBAR -->
-<header class="bg-[#4A7FD1] text-white fixed w-full top-0 z-50 shadow-md">
-<div class="container mx-auto flex justify-between items-center p-4">
-
-<h1 class="font-bold text-xl">
-<i class="fas fa-heartbeat"></i> Clínica Integral
-</h1>
-
-<nav class="space-x-6 hidden md:block">
-<a href="index.html" class="hover:text-blue-200">Inicio</a>
-<a href="servicios.html" class="hover:text-blue-200">Servicios</a>
-<a href="nosotros.html" class="hover:text-blue-200">Nosotros</a>
-<a href="doctores.html" class="hover:text-blue-200">Doctores</a>
-<a href="expedientes.html" class="font-bold underline">Expediente</a>
-<a href="resenas.html" class="hover:text-blue-200">Reseñas</a>
-<a href="citas.html" class="hover:text-blue-200">Citas</a>
-</nav>
-
-</div>
-</header>
-
-<!-- MAIN -->
 <main class="flex-1">
-<!-- EXPEDIENTE -->
-<section id="expediente" class="py-6 bg-white text-center w-full">
-<h2 class="text-3xl font-bold text-[#4A7FD1] mb-6 hover:text-[#3F73C4] transition">Expediente Clínico</h2>
+  <section id="expediente" class="py-10 text-center">
 
-<form id="formExpediente" method="POST" class="max-w-xl mx-auto space-y-4 bg-white p-6 rounded-xl shadow-md">
-<input type="text" name="nombre" placeholder="Nombre completo" required class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
-<input type="number" name="edad" placeholder="Edad" required class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+    <h2 class="text-3xl font-bold text-[#4A7FD1] mb-6">
+      Expediente Clínico
+    </h2>
 
-<select name="sexo" class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
-<option>Sexo</option>
-<option>Masculino</option>
-<option>Femenino</option>
-</select>
+    <form id="formExpediente" method="POST"
+      class="max-w-xl mx-auto space-y-4 bg-white p-6 rounded-xl shadow-md">
 
-<input type="text" name="sangre" placeholder="Tipo de sangre" class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+      <input type="text" name="nombre" placeholder="Nombre completo" required
+        class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
 
-<input type="tel" name="telefono" placeholder="Teléfono" class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+      <input type="number" name="edad" placeholder="Edad" required
+        class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
 
-<textarea name="antecedentes" placeholder="Antecedentes médicos" class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400"></textarea>
+      <select name="sexo"
+        class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+        <option>Sexo</option>
+        <option>Masculino</option>
+        <option>Femenino</option>
+      </select>
 
-<button class="bg-[#4A7FD1] text-white px-6 py-3 rounded hover:bg-[#3F73C4] transition w-full">
-Guardar Expediente
-</button>
+      <input type="text" name="sangre" placeholder="Tipo de sangre"
+        class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
 
-</form> 
+      <input type="tel" name="telefono" placeholder="Teléfono"
+        class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+
+      <textarea name="antecedentes" placeholder="Antecedentes médicos"
+        class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400"></textarea>
+
+      <button
+        class="bg-[#4A7FD1] text-white px-6 py-3 rounded hover:bg-[#3F73C4] transition w-full">
+        Guardar Expediente
+      </button>
+
+    </form>
+
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-[#4A7FD1] text-white text-center p-4 mt-auto">
+  <p>© 2026 Clínica Integral</p>
+</footer>
+
 <script>
 document.getElementById("formExpediente").addEventListener("submit", function(e){
     e.preventDefault();
@@ -101,13 +99,6 @@ document.getElementById("formExpediente").addEventListener("submit", function(e)
     .catch(err => alert("Error al guardar"));
 });
 </script>
-</section>
-  
-
-<!-- FOOTER -->
-<footer class="bg-[#4A7FD1] text-white text-center p-4">
-<p>© 2026 Clínica Integral</p>
-</footer>
 
 </body>
 </html>
