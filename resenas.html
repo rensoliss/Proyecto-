@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
-<body class="bg-gray-100 min-h-screen flex flex-col pt-16">
+<body class="bg-gray-100 min-h-screen flex flex-col">
 
 <!-- NAVBAR -->
 <header class="bg-[#4A7FD1] text-white fixed w-full top-0 z-50 shadow-md">
@@ -33,27 +33,28 @@
 <!-- MAIN -->
 <main class="flex-1 flex flex-col">
 
-<section id="blog" class="flex-1 relative overflow-hidden text-center flex flex-col justify-center">
+<section id="blog" class="flex-1 flex flex-col justify-center items-center relative text-center overflow-hidden">
 
 <!-- FONDO -->
 <div class="absolute inset-0 -z-10 bg-gradient-to-br from-blue-100 via-white to-blue-200"></div>
 
 <div class="absolute inset-0 -z-10">
-  <div class="absolute w-72 h-72 bg-[#4A7FD1] opacity-20 rounded-full blur-3xl animate-pulse top-10 left-10"></div>
-  <div class="absolute w-72 h-72 bg-blue-300 opacity-20 rounded-full blur-3xl animate-pulse bottom-10 right-10"></div>
+  <div class="absolute w-72 h-72 bg-[#4A7FD1] opacity-20 rounded-full blur-3xl top-10 left-10"></div>
+  <div class="absolute w-72 h-72 bg-blue-300 opacity-20 rounded-full blur-3xl bottom-10 right-10"></div>
 </div>
 
-<h2 class="text-3xl font-bold text-[#4A7FD1] mb-10 relative z-10">
-  Reseñas de los Pacientes 
+<!-- TITULO -->
+<h2 class="text-3xl font-bold text-[#4A7FD1] mb-10">
+  Reseñas de los Pacientes
 </h2>
 
-<div class="relative max-w-4xl mx-auto overflow-hidden z-10">
-
 <!-- CARRUSEL -->
-<div id="carousel" class="flex w-full transition-transform duration-700 ease-in-out">
+<div class="relative max-w-4xl w-full mx-auto overflow-hidden">
+
+<div id="carousel" class="flex transition-transform duration-700 ease-in-out">
 
 <!-- PERSONA 1 -->
-<div class="min-w-full flex justify-center items-center">
+<div class="min-w-full flex justify-center">
   <div class="w-64 h-[420px] rounded-3xl shadow-2xl overflow-hidden relative flex flex-col justify-end p-5 text-left">
     <img src="https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
          class="absolute inset-0 w-full h-full object-cover">
@@ -61,13 +62,13 @@
     <div class="relative text-white">
       <h3 class="font-bold text-lg">María González</h3>
       <p class="text-yellow-400">★★★★★</p>
-      <p class="text-xs">"Excelente atención desde el primer momento."</p>
+      <p class="text-xs">Excelente atención desde el primer momento.</p>
     </div>
   </div>
 </div>
 
 <!-- PERSONA 2 -->
-<div class="min-w-full flex justify-center items-center">
+<div class="min-w-full flex justify-center">
   <div class="w-64 h-[420px] rounded-3xl shadow-2xl overflow-hidden relative flex flex-col justify-end p-5 text-left">
     <img src="https://www.divulga.com.mx/wp-content/uploads/2022/01/Carlos-Ramirez-Fuentes.jpg"
          class="absolute inset-0 w-full h-full object-cover">
@@ -75,13 +76,13 @@
     <div class="relative text-white">
       <h3 class="font-bold text-lg">Carlos Ramírez</h3>
       <p class="text-yellow-400">★★★★★</p>
-      <p class="text-xs">"Muy buena atención y rápida."</p>
+      <p class="text-xs">Muy rápida atención y excelente servicio.</p>
     </div>
   </div>
 </div>
 
 <!-- PERSONA 3 -->
-<div class="min-w-full flex justify-center items-center">
+<div class="min-w-full flex justify-center">
   <div class="w-64 h-[420px] rounded-3xl shadow-2xl overflow-hidden relative flex flex-col justify-end p-5 text-left">
     <img src="https://pbs.twimg.com/profile_images/1407158418826174466/u2N-AuyM_400x400.jpg"
          class="absolute inset-0 w-full h-full object-cover">
@@ -89,13 +90,13 @@
     <div class="relative text-white">
       <h3 class="font-bold text-lg">Ana López</h3>
       <p class="text-yellow-400">★★★★☆</p>
-      <p class="text-xs">"Muy claro todo el diagnóstico."</p>
+      <p class="text-xs">Todo fue muy claro y profesional.</p>
     </div>
   </div>
 </div>
 
 <!-- PERSONA 4 -->
-<div class="min-w-full flex justify-center items-center">
+<div class="min-w-full flex justify-center">
   <div class="w-64 h-[420px] rounded-3xl shadow-2xl overflow-hidden relative flex flex-col justify-end p-5 text-left">
     <img src="https://www.nl.gob.mx/sites/default/files/repositorio/Fotograf%C3%ADas%20de%20funcionarios/Organismos%20descentralizados/Luis_Andres_Herrera_Sosa.jpg"
          class="absolute inset-0 w-full h-full object-cover">
@@ -103,13 +104,13 @@
     <div class="relative text-white">
       <h3 class="font-bold text-lg">Luis Herrera</h3>
       <p class="text-yellow-400">★★★★★</p>
-      <p class="text-xs">"Excelente servicio."</p>
+      <p class="text-xs">Excelente trato del personal.</p>
     </div>
   </div>
 </div>
 
 <!-- PERSONA 5 -->
-<div class="min-w-full flex justify-center items-center">
+<div class="min-w-full flex justify-center">
   <div class="w-64 h-[420px] rounded-3xl shadow-2xl overflow-hidden relative flex flex-col justify-end p-5 text-left">
     <img src="https://everybodydance.org/wp-content/uploads/2024/12/Sofia-Martinez.jpg"
          class="absolute inset-0 w-full h-full object-cover">
@@ -117,13 +118,13 @@
     <div class="relative text-white">
       <h3 class="font-bold text-lg">Sofía Martínez</h3>
       <p class="text-yellow-400">★★★★★</p>
-      <p class="text-xs">"Muy buena experiencia."</p>
+      <p class="text-xs">Muy buena experiencia en consulta.</p>
     </div>
   </div>
 </div>
 
 <!-- PERSONA 6 -->
-<div class="min-w-full flex justify-center items-center">
+<div class="min-w-full flex justify-center">
   <div class="w-64 h-[420px] rounded-3xl shadow-2xl overflow-hidden relative flex flex-col justify-end p-5 text-left">
     <img src="https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
          class="absolute inset-0 w-full h-full object-cover">
@@ -131,14 +132,14 @@
     <div class="relative text-white">
       <h3 class="font-bold text-lg">Ricardo Torres</h3>
       <p class="text-yellow-400">★★★★☆</p>
-      <p class="text-xs">"Buen servicio."</p>
+      <p class="text-xs">Buen servicio en general.</p>
     </div>
   </div>
 </div>
 
 </div>
 
-<!-- INDICADORES -->
+<!-- DOTS -->
 <div id="dots" class="flex justify-center mt-6 space-x-2"></div>
 
 </div>
@@ -147,7 +148,7 @@
 </main>
 
 <!-- FOOTER -->
-<footer class="bg-[#4A7FD1] text-white text-center p-4 mt-auto">
+<footer class="bg-[#4A7FD1] text-white text-center p-4">
   <p>© 2026 Clínica Integral</p>
 </footer>
 
