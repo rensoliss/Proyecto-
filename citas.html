@@ -35,28 +35,39 @@
 
 <section id="citas" class="w-full text-center">
 
-  <h2 class="text-3xl font-bold text-[#4A7FD1] mb-6">
+  <h2 class="text-3xl font-bold text-[#4A7FD1] mb-8">
     Agendar Cita
   </h2>
 
-  <!-- FORMULARIO MÁS ALTO Y ESTRECHO -->
+  <!-- FORMULARIO -->
   <form id="formCitas"
-    class="w-full max-w-sm mx-auto bg-white p-8 rounded-xl space-y-5 shadow-lg">
+    class="w-full max-w-3xl mx-auto bg-white p-10 rounded-xl space-y-6 shadow-lg">
 
-    <input type="text" name="nombre" placeholder="Nombre completo" required
-      class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+    <!-- FILA 1 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-    <input type="email" name="correo" placeholder="Correo electrónico" required
-      class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+      <input type="text" name="nombre" placeholder="Nombre completo" required
+        class="border p-4 rounded focus:ring-2 focus:ring-blue-400 w-full">
 
-    <input type="tel" name="telefono" placeholder="Teléfono"
-      class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+      <input type="email" name="correo" placeholder="Correo electrónico" required
+        class="border p-4 rounded focus:ring-2 focus:ring-blue-400 w-full">
 
-    <input type="date" name="fecha" required
-      class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+    </div>
 
+    <!-- FILA 2 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+      <input type="tel" name="telefono" placeholder="Teléfono"
+        class="border p-4 rounded focus:ring-2 focus:ring-blue-400 w-full">
+
+      <input type="date" name="fecha" required
+        class="border p-4 rounded focus:ring-2 focus:ring-blue-400 w-full">
+
+    </div>
+
+    <!-- ESPECIALIDAD -->
     <select name="especialidad"
-      class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400">
+      class="border p-4 rounded focus:ring-2 focus:ring-blue-400 w-full">
 
       <option>Selecciona especialidad</option>
       <option>Cardiología</option>
@@ -71,11 +82,13 @@
 
     </select>
 
+    <!-- MOTIVO -->
     <textarea name="motivo" placeholder="Motivo de la consulta"
-      class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-400 h-28"></textarea>
+      class="border p-4 rounded focus:ring-2 focus:ring-blue-400 w-full h-40"></textarea>
 
-    <button class="bg-[#4A7FD1] text-white py-3 rounded hover:bg-[#3F73C4] transition w-full">
-      Agendar
+    <!-- BOTÓN -->
+    <button class="bg-[#4A7FD1] text-white py-4 rounded hover:bg-[#3F73C4] transition w-full text-lg">
+      Agendar Cita
     </button>
 
   </form>
